@@ -6,10 +6,6 @@
 " The algorithm for approximating the GUI colors with the xterm palette
 " is from desert256.vim by Henry So Jr.
 "
-" For more info on highlighting see:
-" * http://vim.runpaint.org/display/redefining-highlight-groups/
-" * http://vimdoc.sourceforge.net/htmldoc/syntax.html
-"
 
 set background=dark
 
