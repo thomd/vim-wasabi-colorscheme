@@ -8,6 +8,7 @@
 "
 
 set background=dark
+set cursorline
 
 if version > 580
 	hi clear
@@ -236,7 +237,7 @@ endfun
 
 call <SID>X("Normal",		"cccccc",	"121212",	"none")   " normal text
 call <SID>X("Cursor",		"222222",	"ecee90",	"none")   " the character under the cursor
-call <SID>X("CursorLine",	"",			"32322e",	"none")   " the screen line that the cursor is in when 'cursorline' is set
+call <SID>X("CursorLine",	"",			"242424",	"none")   " the screen line that the cursor is in when 'cursorline' is set
 call <SID>X("CursorColumn",	"",			"2d2d2d",	"")       " the screen column that the cursor is in when 'cursorcolumn' is set
 			"Question
 call <SID>X("IncSearch",    "111111",   "ffffaa",   "")       " 'incsearch' highlighting; also used for the text replaced with :s///c replaced
@@ -287,7 +288,7 @@ call <SID>X("Keyword",		"87afff",	"",			"none")    " any other keyword
 call <SID>X("PreProc",		"e5786d",	"",			"none")    " generic Preprocessor
 call <SID>X("Type",			"caeb82",	"",			"none")    " int, long, char, etc.
 call <SID>X("Special",		"cccccc",	"",			"none")    " any special symbol
-call <SID>X("Todo",			"222222",	"ffaa00",	"italic")  " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+call <SID>X("Todo",			"111111",	"ffaa00",	"italic")  " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 			"Underlined                                        " text that stands out, HTML links
 			"Error                                             " any erroneous construct
 			"Ignore                                            " left blank, hidden
