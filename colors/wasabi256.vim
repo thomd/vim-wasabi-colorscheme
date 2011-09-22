@@ -235,30 +235,30 @@ fun <SID>X(group, fg, bg, attr)
 endfun
 " }}}
 
-call <SID>X("Normal",		"cccccc",	"121212",	"none")   " normal text
-call <SID>X("Cursor",		"222222",	"ecee90",	"none")   " the character under the cursor
-call <SID>X("CursorLine",	"",			"242424",	"none")   " the screen line that the cursor is in when 'cursorline' is set
-call <SID>X("CursorColumn",	"",			"2d2d2d",	"")       " the screen column that the cursor is in when 'cursorcolumn' is set
-			"Question
-call <SID>X("IncSearch",    "111111",   "ffffaa",   "")       " 'incsearch' highlighting; also used for the text replaced with :s///c replaced
-call <SID>X("Search",		"111111",	"ffffaa",	"")       " Last search pattern highlighting
-call <SID>X("MatchParen",	"ecee90",	"2d2d2d",	"bold")   " The character under the cursor or just before it, if it is a paired bracket, and its match.
-call <SID>X("SpecialKey",	"6c6c6c",	"121212",	"none")   " Meta and special keys listed with ':map'. Generally: text that is displayed differently from what it really is
-call <SID>X("Visual",		"ecee90",	"597418",	"none")   " visual mode selection
-call <SID>X("LineNr",		"6c6c6c",	"242424",	"none")   " Line numbers
-call <SID>X("Folded",		"a0a8b0",	"323232",	"none")   " line used for closed folds
-call <SID>X("Title",		"f6f3e8",	"",			"bold")   " titles for output from ':set all', ':autocmd' etc.
-call <SID>X("VertSplit",	"444444",	"444444",	"none")   " the column separating vertically split windows.
-call <SID>X("StatusLine",	"ffffaa",	"444444",	"italic") " status line of current window.
-call <SID>X("StatusLineNC",	"111111",	"444444",	"none")   " status lines of not-current windows.
-call <SID>X("WildMenu",     "ecee90",   "597418",   "none")   " current match in 'wildmenu' completion
+call <SID>X("Normal"       , "cccccc" , "121212" , "none")   " normal text
+call <SID>X("Cursor"       , "222222" , "ecee90" , "none")   " the character under the cursor
+call <SID>X("CursorLine"   , ""       , "242424" , "none")   " the screen line that the cursor is in when 'cursorline' is set
+call <SID>X("CursorColumn" , ""       , "2d2d2d" , "")       " the screen column that the cursor is in when 'cursorcolumn' is set
+call <SID>X("IncSearch"    , "111111" , "ffffaa" , "")       " 'incsearch' highlighting; also used for the text replaced with :s///c replaced
+call <SID>X("Search"       , "111111" , "ffffaa" , "")       " Last search pattern highlighting
+call <SID>X("MatchParen"   , "ecee90" , "2d2d2d" , "bold")   " The character under the cursor or just before it - if it is a paired bracket - and its match.
+call <SID>X("SpecialKey"   , "6c6c6c" , "121212" , "none")   " Meta and special keys listed with ':map'. Generally: text that is displayed differently from what it really is
+call <SID>X("Visual"       , "ecee90" , "597418" , "none")   " visual mode selection
+call <SID>X("LineNr"       , "6c6c6c" , "242424" , "none")   " Line numbers
+call <SID>X("Folded"       , "a0a8b0" , "323232" , "none")   " line used for closed folds
+call <SID>X("Title"        , "f6f3e8" , ""       , "bold")   " titles for output from ':set all'; ':autocmd' etc.
+call <SID>X("VertSplit"    , "444444" , "444444" , "none")   " the column separating vertically split windows.
+call <SID>X("StatusLine"   , "ffffaa" , "444444" , "italic") " status line of current window.
+call <SID>X("StatusLineNC" , "111111" , "444444" , "none")   " status lines of not-current windows.
+call <SID>X("WildMenu"     , "ecee90" , "597418" , "none")   " current match in 'wildmenu' completion
+call <SID>X("Pmenu"        , "f6f3e8" , "444444" , "none")   " Popup menu: normal item.
+call <SID>X("PmenuSel"     , "121212" , "caeb82" , "none")   " Popup menu: selected item.
+call <SID>X("WarningMsg"   , "ff0000" , ""       , "")       " warning messages
+call <SID>X("ErrorMsg"     , "ffffff" , "ff0000" , "")       " error messages on the command line
 			"Scrollbar
 			"Tooltip
 			"Menu
-call <SID>X("Pmenu",		"f6f3e8",	"444444",   "none")   " Popup menu: normal item.
-call <SID>X("PmenuSel",		"121212",	"caeb82",	"none")   " Popup menu: selected item.
-call <SID>X("WarningMsg",	"ff0000",	"",			"")       " warning messages
-call <SID>X("ErrorMsg",	    "ffffff",	"ff0000",	"")       " error messages on the command line
+			"Question
 			"ModeMsg
 			"MoreMsg
 			"Directory
@@ -269,29 +269,29 @@ call <SID>X("ErrorMsg",	    "ffffff",	"ff0000",	"")       " error messages on th
 
 " syntax highlighting
 " -------------------
-call <SID>X("Comment",		"555555",	"",			"italic")  " any comment
-call <SID>X("Constant",		"e5786d",	"",			"none")    " any constant
-call <SID>X("String",		"95e454",	"",			"italic")  " a string constant: 'this is a string'
-call <SID>X("Character",	"95e454",	"",			"italic")  " a character constant: 'c', '\n'constant
-call <SID>X("Number",		"e5786d",	"",			"none")    " a number constant: 234, 0xff
-call <SID>X("Boolean",		"e5786d",	"",			"none")    " a boolean constant: TRUE, false
-call <SID>X("Float",		"e5786d",	"",			"none")    " a floating point constant: 2.3e10
-call <SID>X("Identifier",	"caeb82",	"",			"none")    " any variable name
-call <SID>X("Function",		"caeb82",	"",			"none")    " function name (also: methods for classes)
-call <SID>X("Statement",	"87afff",	"",			"none")    " any statement
-            "Conditional                                       " if, then, else, endif, switch, etc.
-            "Repeat                                            " for, do, while, etc.
-            "Label                                             " case, default, etc.
-            "Operator                                          " 'sizeof', '+', '*', etc.
-call <SID>X("Keyword",		"87afff",	"",			"none")    " any other keyword
-            "Exception                                         " try, catch, throw
-call <SID>X("PreProc",		"e5786d",	"",			"none")    " generic Preprocessor
-call <SID>X("Type",			"caeb82",	"",			"none")    " int, long, char, etc.
-call <SID>X("Special",		"cccccc",	"",			"none")    " any special symbol
-call <SID>X("Todo",			"111111",	"ffaa00",	"italic")  " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-			"Underlined                                        " text that stands out, HTML links
-			"Error                                             " any erroneous construct
-			"Ignore                                            " left blank, hidden
+call <SID>X("Comment"    , "555555" , ""       , "italic")  " any comment
+call <SID>X("Constant"   , "e5786d" , ""       , "none")    " any constant
+call <SID>X("String"     , "95e454" , ""       , "italic")  " a string constant: 'this is a string'
+call <SID>X("Character"  , "95e454" , ""       , "italic")  " a character constant: 'c'; '\n'
+call <SID>X("Number"     , "e5786d" , ""       , "none")    " a number constant: 234; 0xff
+call <SID>X("Boolean"    , "e5786d" , ""       , "none")    " a boolean constant: TRUE; false
+call <SID>X("Float"      , "e5786d" , ""       , "none")    " a floating point constant: 2.3e10
+call <SID>X("Identifier" , "caeb82" , ""       , "none")    " any variable name
+call <SID>X("Function"   , "caeb82" , ""       , "none")    " function name (also: methods for classes)
+call <SID>X("Statement"  , "87afff" , ""       , "none")    " any statement
+call <SID>X("Keyword"    , "87afff" , ""       , "none")    " any other keyword
+call <SID>X("PreProc"    , "e5786d" , ""       , "none")    " generic Preprocessor
+call <SID>X("Type"       , "caeb82" , ""       , "none")    " int; long; char; etc.
+call <SID>X("Special"    , "cccccc" , ""       , "none")    " any special symbol
+call <SID>X("Todo"       , "111111" , "ffaa00" , "italic")  " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+            "Exception                                      " try; catch; throw
+            "Conditional                                    " ifr; then; else; endif; switch; etc.
+            "Repeat                                         " for; do; while; etc.
+            "Label                                          " case; default; etc.
+            "Operator                                       " 'sizeof'; '+'; '*'; etc.
+			"Underlined                                     " text that stands out; HTML links
+			"Error                                          " any erroneous construct
+			"Ignore                                         " left blank, hidden
 
 hi! link VisualNOS	Visual
 hi! link NonText	LineNr
