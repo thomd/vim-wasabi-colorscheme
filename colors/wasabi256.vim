@@ -266,6 +266,7 @@ call <SID>X("ErrorMsg"     , "ffffff" , "ff0000" , "")       " error messages on
 			"DiffChange
 			"DiffDelete
 			"DiffText
+call <SID>X("JSHintError"     ,"" ,"990000" ,"")       " error detected by jshint (based on https://github.com/manalang/jshint.vim)
 
 " syntax highlighting
 " -------------------
