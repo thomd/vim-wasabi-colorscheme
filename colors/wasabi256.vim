@@ -290,7 +290,7 @@ call <SID>X("Todo"       , "111111" , "ffaa00" , "italic")  " anything that need
             "Repeat                                         " for; do; while; etc.
             "Label                                          " case; default; etc.
             "Operator                                       " 'sizeof'; '+'; '*'; etc.
-			"Underlined                                     " text that stands out; HTML links
+call <SID>X("Underlined","e5786d","","none")                " text that stands out; HTML links
 			"Error                                          " any erroneous construct
 			"Ignore                                         " left blank, hidden
 
