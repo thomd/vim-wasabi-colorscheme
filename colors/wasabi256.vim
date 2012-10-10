@@ -246,7 +246,7 @@ call <SID>X("SpecialKey"   , "6c6c6c" , "121212" , "none")   " Meta and special 
 call <SID>X("Visual"       , "ecee90" , "597418" , "none")   " visual mode selection
 call <SID>X("LineNr"       , "6c6c6c" , "242424" , "none")   " Line numbers
 call <SID>X("Folded"       , "a0a8b0" , "323232" , "none")   " line used for closed folds
-call <SID>X("Title"        , "f6f3e8" , ""       , "bold")   " titles for output from ':set all'; ':autocmd' etc.
+call <SID>X("Title"        , "242424" , ""       , "none")   " titles for output from ':set all'; ':autocmd' etc.
 call <SID>X("VertSplit"    , "444444" , "444444" , "none")   " the column separating vertically split windows.
 call <SID>X("StatusLine"   , "ffffaa" , "444444" , "italic") " status line of current window.
 call <SID>X("StatusLineNC" , "111111" , "444444" , "none")   " status lines of not-current windows.
@@ -266,7 +266,12 @@ call <SID>X("ErrorMsg"     , "ffffff" , "ff0000" , "")       " error messages on
 			"DiffChange
 			"DiffDelete
 			"DiffText
-call <SID>X("JSHintError"     ,"" ,"990000" ,"")       " error detected by jshint (based on https://github.com/manalang/jshint.vim)
+
+" tabline
+" -------
+call <SID>X("TabLine"     , "cccccc" , "444444"       , "none")    " other tabs
+call <SID>X("TabLineSel"  , "ecee90" , "597418"       , "none")    " selected tab
+call <SID>X("TabLineFill" , "cccccc" , "242424"       , "none")    " tabline
 
 " syntax highlighting
 " -------------------
@@ -291,6 +296,7 @@ call <SID>X("Todo"       , "111111" , "ffaa00" , "italic")  " anything that need
             "Label                                          " case; default; etc.
             "Operator                                       " 'sizeof'; '+'; '*'; etc.
 call <SID>X("Underlined","e5786d","","none")                " text that stands out; HTML links
+call <SID>X("JSHintError","","990000","")                   " any erroneous construct
 			"Error                                          " any erroneous construct
 			"Ignore                                         " left blank, hidden
 
