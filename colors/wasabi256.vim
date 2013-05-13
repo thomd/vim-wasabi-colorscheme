@@ -246,7 +246,7 @@ call <SID>X("SpecialKey"   , "6c6c6c" , "121212" , "none")   " Meta and special 
 call <SID>X("Visual"       , "ecee90" , "597418" , "none")   " visual mode selection
 call <SID>X("LineNr"       , "6c6c6c" , "242424" , "none")   " Line numbers
 call <SID>X("Folded"       , "a0a8b0" , "323232" , "none")   " line used for closed folds
-call <SID>X("Title"        , "242424" , ""       , "none")   " titles for output from ':set all'; ':autocmd' etc.
+call <SID>X("Title"        , "f6f3e8" , ""       , "none")   " titles for output from ':set all'; ':autocmd' etc.
 call <SID>X("VertSplit"    , "444444" , "444444" , "none")   " the column separating vertically split windows.
 call <SID>X("StatusLine"   , "ffffaa" , "444444" , "italic") " status line of current window.
 call <SID>X("StatusLineNC" , "111111" , "444444" , "none")   " status lines of not-current windows.
