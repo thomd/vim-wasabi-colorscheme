@@ -267,6 +267,13 @@ call <SID>X("ErrorMsg"     , "ffffff" , "ff0000" , "")       " error messages on
 			"DiffDelete
 			"DiffText
 
+" spell
+" -------
+call <SID>X("SpellBad"    , "dd0000" , "121212"       , "underline")
+call <SID>X("SpellRare"   , "dd0000" , "121212"       , "underline")
+call <SID>X("SpellLocal"  , "dd0000" , "121212"       , "underline")
+call <SID>X("SpellCap"    , "dd0000" , "121212"       , "underline")
+
 " tabline
 " -------
 call <SID>X("TabLine"     , "cccccc" , "444444"       , "none")    " other tabs
