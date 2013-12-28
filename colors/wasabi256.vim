@@ -274,6 +274,13 @@ call <SID>X("SpellRare"   , "dd0000" , "121212"       , "underline")
 call <SID>X("SpellLocal"  , "dd0000" , "121212"       , "underline")
 call <SID>X("SpellCap"    , "dd0000" , "121212"       , "underline")
 
+" Signify (https://github.com/mhinz/vim-signify)
+" ----------------------------------------------
+call <SID>X("SignColumn", "6c6c6c", "242424", "none")        " sign column
+call <SID>X("SignifySignAdd", "95e454", "222222", "none")    " sign for added line(s)
+call <SID>X("SignifySignDelete", "f78181", "222222", "none") " sign for deleted line(s)
+call <SID>X("SignifySignChange", "87afff", "222222", "none") " sign for changed line(s)
+
 " tabline
 " -------
 call <SID>X("TabLine"     , "cccccc" , "444444"       , "none")    " other tabs
