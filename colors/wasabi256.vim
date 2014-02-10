@@ -245,6 +245,7 @@ call <SID>X("MatchParen"   , "ecee90" , "2d2d2d" , "bold")   " The character und
 call <SID>X("SpecialKey"   , "6c6c6c" , "121212" , "none")   " Meta and special keys listed with ':map'. Generally: text that is displayed differently from what it really is
 call <SID>X("Visual"       , "ecee90" , "597418" , "none")   " visual mode selection
 call <SID>X("LineNr"       , "6c6c6c" , "242424" , "none")   " Line numbers
+call <SID>X("CursorLineNr" , "ecee90" , "242424" , "none")   " Cursor Line number
 call <SID>X("Folded"       , "a0a8b0" , "323232" , "none")   " line used for closed folds
 call <SID>X("Title"        , "f6f3e8" , ""       , "none")   " titles for output from ':set all'; ':autocmd' etc.
 call <SID>X("VertSplit"    , "444444" , "444444" , "none")   " the column separating vertically split windows.
