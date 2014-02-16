@@ -238,6 +238,7 @@ endfun
 call <SID>X("Normal"       , "cccccc" , "121212" , "none")   " normal text
 call <SID>X("Cursor"       , "222222" , "ecee90" , "none")   " the character under the cursor
 call <SID>X("CursorLine"   , ""       , "242424" , "none")   " the screen line that the cursor is in when 'cursorline' is set
+call <SID>X("ColorColumn"  , ""       , "242424" , "none")   " the screen line that the cursor is in when 'cursorline' is set
 call <SID>X("CursorColumn" , ""       , "2d2d2d" , "")       " the screen column that the cursor is in when 'cursorcolumn' is set
 call <SID>X("IncSearch"    , "111111" , "ffffaa" , "")       " 'incsearch' highlighting; also used for the text replaced with :s///c replaced
 call <SID>X("Search"       , "111111" , "ffffaa" , "")       " Last search pattern highlighting
